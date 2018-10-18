@@ -1,3 +1,5 @@
+var service = require('common/service.js');
+
 //app.js
 App({
   onLaunch: function () {
@@ -10,6 +12,7 @@ App({
     wx.login({
       success: res => {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
+        service.s.user_upload_code({code: res.code});
       }
     })
     // 获取用户信息
