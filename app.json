@@ -1,0 +1,36 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/user/user",
+    "pages/about/about",
+    "pages/music/music",
+    "pages/message/message",
+    "pages/setting/setting"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#929292",
+    "selectedColor": "#ff2d55",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "image/tabbar/1-off.png",
+        "selectedIconPath": "image/tabbar/1-on.png",
+        "text": "主页"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "image/tabbar/2-off.png",
+        "selectedIconPath": "image/tabbar/2-on.png",
+        "text": "个人中心"
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+<view class="index">
+  <view id="user">
+    <view id="user_info">
+      <image id="user_ava" class="user_avator"/>
+    </view>
+  </view>
+  <navigator url="../setting/setting" class="navigator">
+    <view class="text">设置</view>
+    <view class="navigator-arrow"></view>
+  </navigator>
+  <navigator url="../music/music" class="navigator">
+    <view class="text">我的音乐</view>
+    <view class="navigator-arrow"></view>
+  </navigator>
+  <navigator url="../message/message" class="navigator">
+    <view class="text">我的消息</view>
+    <view class="navigator-arrow"></view>
+  </navigator>
+  <navigator url="../about/about" class="navigator">
+    <view class="text">关于app</view>
+    <view class="navigator-arrow"></view>
+  </navigator>
+  <view class="navigator switch">
+    <text class="text">开关</text>
+    <switch name="switch"/>
+  </view>
+</view>

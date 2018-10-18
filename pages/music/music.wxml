@@ -1,0 +1,13 @@
+<view class="container">
+  <view class="body">
+    <view class="button">
+      <text class="text">音乐一</text>
+    </view>
+    <view class="button">
+      <text class="text">音乐二</text>
+    </view>
+    <view class="button">
+      <text class="text">音乐三</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,13 @@
+
+<view class="container">
+  <view class="body">
+    <view class="title">
+      <text>每日推荐</text>
+    </view>
+    <scroll-view class="scroll-view" scroll-x="true" bindscroll="scroll" style="width: 100%">
+      <view id="item1" class="scroll-view-item item-1"></view>
+      <view id="item2" class="scroll-view-item item-2"></view>
+      <view id="item3" class="scroll-view-item item-3"></view>
+    </scroll-view>
+  </view>
+</view>

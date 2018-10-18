@@ -1,0 +1,16 @@
+<view class="container">
+  <view class="body">
+    <view class="button switch">
+      <text class="text">设置一</text>
+      <switch name="switch"/>
+    </view>
+    <view class="button switch">
+      <text class="text">设置二</text>
+      <switch name="switch"/>
+    </view>
+    <view class="button switch">
+      <text class="text">设置三</text>
+      <switch name="switch"/>
+    </view>
+  </view>
+</view>

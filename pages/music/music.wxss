@@ -1,0 +1,15 @@
+.button {
+  padding: 20rpx 30rpx;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.text{
+  font-size: 28rpx;
+  color: #999999;
+  margin-bottom: 10rpx;
+  align-items: center;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  flex: 1;
+}

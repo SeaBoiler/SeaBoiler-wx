@@ -1,0 +1,7 @@
+<view class="container">
+  <view class="body">
+    <view>
+      <text class="text">关于app</text>
+    </view>
+  </view>
+</view>
