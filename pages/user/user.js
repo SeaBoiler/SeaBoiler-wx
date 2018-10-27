@@ -1,7 +1,14 @@
 Page({
+  onLoad() {
+    wx.showToast({
+      title: '正在制作…',
+      // icon: 'none',
+    })
+  },
+
   onShareAppMessage() {
     return {
-      title: 'user',
+      // title: 'user',
       path: 'pages/user'
     }
   },

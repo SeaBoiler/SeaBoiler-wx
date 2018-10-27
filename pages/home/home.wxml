@@ -1,22 +1,24 @@
 <view class='body'></view>
 <view class="container">
   <view class="music-box active">
-    <image class='random img-fit'></image>
+    <image class='cover img-fit' catchtouchstart='touchStart' catchtouchend='touchEnd' style='background-image: url("{{cover}}")'></image>
     <view class='footer'>
       <view class='btn-box'>
-        <image class='btn play img-fit'></image>
+        <image class='btn {{play_status}} img-fit' bindtap='toggleCurrentMusic'></image>
       </view>
       <view class='info'>
-        <text class='music-name'>修炼爱情</text>
-        <text class='singer'>林俊杰</text>
+        <text class='music-name'>{{name}}</text>
+        <text class='singer'>{{singer}}</text>
       </view>
     </view>
   </view>
-  <text class='digit title'>10.17</text>
-  <view class='owner'>
-        <text>来自</text>
-        <text class='name'>啦啦啦被煮</text>
-        <image class='avatar img-fit'></image>
-        <text>的推荐</text>
-      </view>
+  <text class='digit title'>{{date}}</text>
+  <view class='digit owner'>
+    <text>来自</text>
+    <text class='name'>{{owner}}</text>
+    <image class='avatar img-fit' style='background-image: url("{{avatar}}")'></image>
+    <text>的推荐</text>
+  </view>
+  <text class='digit comment-number'>截止{{cmt_date}}，评论数#{{cmt_num}}</text>
+  <!-- <audio src='{{audio_url}}'></audio> -->
 </view>

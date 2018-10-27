@@ -13,6 +13,9 @@
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"white"
   },
+  "requiredBackgroundModes": [
+    "audio"
+  ],
   "tabBar": {
     "color": "#929292",
     "selectedColor": "#ff2d55",

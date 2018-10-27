@@ -36,7 +36,6 @@ var request = function() {
   r.succ_handler = function(succ_callback) {
     return function(resp) {
       resp = resp.data;
-      console.log(resp);
       if (resp.code !== 0) {
         wx.showToast({
           title: resp.msg,

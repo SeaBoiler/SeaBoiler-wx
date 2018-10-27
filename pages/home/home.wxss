@@ -13,21 +13,36 @@
   top: calc(50vh - 50vw - 100rpx);
 }
 
-image.random {
+image.cover {
   width: 100vw;
   height: 100vw;
   background-image: url("https://unsplash.6-79.cn/random/small")
 }
 
+text.comment-number {
+  position: absolute;
+  top: -30rpx;
+  right: 0;
+  height: 30rpx;
+  line-height: 30rpx;
+  vertical-align: middle;
+  text-align: center;
+  /* background: black; */
+  font-size: 20rpx;
+  color: white;
+  padding: 0 10rpx;
+  opacity: 0.7;
+}
+
 text.title {
   position: absolute;
-  top: 40rpx;
+  top: -40rpx;
   left: 0;
   height: 40rpx;
   line-height: 40rpx;
   vertical-align: middle;
   text-align: center;
-  background: black;
+  /* background: white; */
   font-size: 30rpx;
   color: white;
   padding: 0 20rpx;
@@ -35,38 +50,47 @@ text.title {
 }
 
 view.owner {
+  height: 40rpx;
   position: absolute;
-  top: 100rpx;
+  top: 0rpx;
   background: black;
-  padding: 0 20rpx;
-  opacity: 0.7;
+  width: 100%;
+  text-align: center;
+  opacity: 0.3;
 }
 
 view.owner text {
+  margin-top: -10rpx;
+  line-height: 40rpx;
+  vertical-align: middle;
   display: inline-block;
-  font-size: 30rpx;
+  font-size: 24rpx;
   color: white;
 }
 
 view.owner text.name {
   font-weight: bold;
+  margin-left: 10rpx;
 }
 
 view.owner image.avatar {
+  line-height: 40rpx;
+  vertical-align: middle;
   display: inline-block;
-  width: 28rpx;
-  height: 28rpx;
+  width: 22rpx;
+  height: 22rpx;
   border: 1rpx solid rgba(255, 255, 255, 0.3);
-  border-radius: 28rpx;
-  margin: 5rpx 5rpx 0;
-  background-image: url("https://unsplash.6-79.cn/random/small");
+  border-radius: 22rpx;
+  margin: -10rpx 10rpx 0 5rpx;
+  box-sizing: border-box;
 }
 
 view.footer {
   position: absolute;
-  height: 100px;
+  height: 150rpx;
   top: 100vw;
   width: 100vw;
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.3); */
 }
 
 view.footer view.info {
