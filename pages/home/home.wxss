@@ -102,19 +102,28 @@ view.footer view.info {
 
 view.footer view.info text {
   position: absolute;
-  right: 0;
   width: max-content;
+}
+
+view.footer view.info view.scroll-music-name {
+  position: relative;
+  width: 500rpx;
+  height: 100%;
+  overflow: hidden;
 }
 
 view.footer view.info text.music-name {
   font-size: 40rpx;
   color: white;
+  white-space: nowrap;
+  left: 0;
 }
 
 view.footer view.info text.singer {
   top: 50rpx;
   font-size: 30rpx;
   color: gray;
+  right: 0;
 }
 
 view.footer view.btn-box {

@@ -7,7 +7,9 @@
         <image class='btn {{play_status}} img-fit' bindtap='toggleCurrentMusic'></image>
       </view>
       <view class='info'>
-        <text class='music-name'>{{name}}</text>
+        <view class='scroll-music-name'>
+          <text class='music-name' style='margin-left: {{marginLeft}}px'>{{name}}</text>
+        </view>
         <text class='singer'>{{singer}}</text>
       </view>
     </view>

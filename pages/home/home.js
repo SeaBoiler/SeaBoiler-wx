@@ -26,6 +26,7 @@ Page({
 
   showDailyMusic(date) {
     let music = app.globalData.daily_list[date];
+
     if (!music.play_status)
       music.play_status = 'play';
     this.setData({
@@ -40,7 +41,35 @@ Page({
       cmt_date: this.formatTimestamp(music.create_time),
       netease_id: music.netease_id,
       play_status: music.play_status,
-    })
+    });
+
+    console.log();
+    this.scrollMusicName();
+  },
+
+  scrollMusicName() {
+    let q = wx.createSelectorQuery();
+    q.select('.scroll-music-name').boundingClientRect();
+    q.select('.music-name').boundingClientRect();
+
+    q.exec((res) => {
+      console.log(res);
+      let containerWidth = res[0].width;
+      let nameWidth = res[1].width;
+      console.log(containerWidth);
+      console.log(nameWidth);
+      let interval = setInterval(() => {
+        if (-this.data.marginLeft < nameWidth - containerWidth) {
+          this.setData({
+            marginLeft: this.data.marginLeft - 3,
+          })
+        } else {
+          this.setData({
+            marginLeft: 0,
+          })
+        }
+      }, 100);
+    });
   },
 
   toggleCurrentMusic($event) {
@@ -81,6 +110,7 @@ Page({
   },
 
   data: {
+    marginLeft: 0,
     date: '',
     owner: '',
     avatar: '',
